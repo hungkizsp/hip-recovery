@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Hướng Dẫn Bài Tập</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container py-5 fade-in">
+            <h1 class="text-primary text-center fw-bold mb-3">Hướng Dẫn Bài Tập Phục Hồi</h1>
+            <p class="text-center text-muted mb-5">Thực hiện các bài tập dưới sự hướng dẫn của chuyên gia vật lý trị liệu</p>
+
+            <!-- Phase 1 -->
+            <div class="card mb-5 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="h4 mb-0"><i class="bi bi-1-circle-fill me-2"></i>Giai đoạn 1: 0-3 Ngày sau mổ</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-breathing.jpg}" class="card-img-top zoomable" alt="Hít thở sâu">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Hít Thở Sâu & Ho Hiệu Quả</h5>
+                                    <p class="card-text text-muted">Giúp làm sạch phổi, ngăn ngừa viêm phổi. Hít vào sâu qua mũi, giữ 2-3 giây, thở ra từ từ qua miệng.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-ankle-pump.jpg}" class="card-img-top zoomable" alt="Bơm cổ chân">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Bơm Cổ Chân (Ankle Pump)</h5>
+                                    <p class="card-text text-muted">Ngăn ngừa cục máu đông. Gập cổ chân lên trên tối đa, sau đó duỗi xuống tối đa. Lặp lại thường xuyên.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-muscle.jpg}" class="card-img-top zoomable" alt="Gồng cơ đùi">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Gồng Cơ Đùi & Cơ Mông</h5>
+                                    <p class="card-text text-muted">Ép kheo chân xuống giường (cơ đùi) hoặc siết chặt hai mông (cơ mông). Giữ 5 giây rồi thả lỏng.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="card mb-5 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h3 class="h4 mb-0"><i class="bi bi-2-circle-fill me-2"></i>Giai đoạn 2: 4-7 Ngày sau mổ</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-standing.jpg}" class="card-img-top zoomable" alt="Tập đứng">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Tập Đứng (Standing Training)</h5>
+                                    <p class="card-text text-muted">Tập dồn trọng lượng lên chân mổ theo mức độ cho phép của bác sĩ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-transfer.jpg}" class="card-img-top zoomable" alt="Tập di chuyển">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Tập Di Chuyển (Transfer)</h5>
+                                    <p class="card-text text-muted">Chuyển từ giường sang ghế và ngược lại một cách an toàn, đúng tư thế.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/exercise-walker.png}" class="card-img-top zoomable" alt="Khung tập đi">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Tập Đi Với Khung (Walker)</h5>
+                                    <p class="card-text text-muted">Đẩy khung lên trước, bước chân mổ lên ngang khung, rồi bước chân lành lên.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h3 class="h4 mb-0"><i class="bi bi-3-circle-fill me-2"></i>Giai đoạn 3: Sau 1 tuần</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col-12">
+                            <div class="card h-100 border-light">
+                                <div class="card-body bg-light d-flex flex-column justify-content-center h-100">
+                                    <h5 class="card-title">Đi Bộ Khoảng Cách Xa Hơn</h5>
+                                    <p class="card-text text-muted">Tăng dần khoảng cách và thời gian đi bộ mỗi ngày, luôn dùng dụng cụ hỗ trợ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-light">
+                                <div class="card-body bg-light d-flex flex-column justify-content-center h-100">
+                                    <h5 class="card-title">Các Hoạt Động Hàng Ngày</h5>
+                                    <p class="card-text text-muted">Tập lại các kỹ năng tự chăm sóc bản thân với các dụng cụ hỗ trợ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-light">
+                                <img th:src="@{/images/stairs-training.jpeg}" class="card-img-top zoomable" alt="Tập lên xuống cầu thang">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Tập Lên Xuống Cầu Thang</h5>
+                                    <p class="card-text text-muted">Lên: Chân lành lên trước. Xuống: Nạng/Chân mổ xuống trước. Lên lành, xuống đau.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

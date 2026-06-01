@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout}">
+
+<head>
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+    <div layout:fragment="content">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="container text-center">
+                <img th:src="@{/images/hero-banner.jpeg}" alt="Hero Banner"
+                    class="img-fluid rounded shadow-lg mb-4 zoomable"
+                    style="width:100vw; height:auto; min-height:120vh; object-fit:contain; background:white;">
+                <h1 class="display-4 fw-bold mb-4">Hướng Dẫn Phục Hồi Sau Thay Khớp Háng</h1>
+                <p class="lead mb-5">Giúp bệnh nhân phục hồi an toàn, hiệu quả và nhanh chóng trở lại cuộc sống bình
+                    thường.</p>
+                <a th:href="@{/tong-quan}"
+                    class="btn btn-light btn-lg text-primary fw-bold px-5 rounded-pill shadow">Bắt Đầu Phục Hồi</a>
+            </div>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="text-primary fw-bold">Mục Tiêu Phục Hồi</h2>
+                        <p class="text-muted">Lộ trình được thiết kế bài bản theo từng giai đoạn</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center">
+                            <div class="icon-box">
+                                <i class="bi bi-activity"></i>
+                            </div>
+                            <h4 class="card-title">Bài Tập Vận Động</h4>
+                            <p class="card-text text-muted">Các bài tập chuyên biệt giúp tăng cường sức mạnh cơ bắp và
+                                biên độ vận động.</p>
+                            <a th:href="@{/bai-tap}" class="btn btn-outline-primary mt-auto">Xem Bài Tập</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center">
+                            <div class="icon-box">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h4 class="card-title">Sinh Hoạt An Toàn</h4>
+                            <p class="card-text text-muted">Hướng dẫn tư thế và cách thực hiện các hoạt động hàng ngày
+                                để bảo vệ khớp mới.</p>
+                            <a th:href="@{/sinh-hoat-an-toan}" class="btn btn-outline-primary mt-auto">Xem Hướng Dẫn</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 text-center warning-card">
+                            <div class="icon-box text-danger">
+                                <i class="bi bi-exclamation-triangle-fill"></i>
+                            </div>
+                            <h4 class="card-title text-danger">Dấu Hiệu Cảnh Báo</h4>
+                            <p class="card-text text-muted">Nhận biết sớm các triệu chứng bất thường cần liên hệ ngay
+                                với bác sĩ.</p>
+                            <a th:href="@{/dau-hieu-canh-bao}" class="btn btn-outline-danger mt-auto">Xem Dấu Hiệu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

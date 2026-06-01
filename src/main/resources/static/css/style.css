@@ -1,0 +1,285 @@
+:root {
+    --primary-color: #0284c7;
+    /* Sky 600 */
+    --primary-dark: #0369a1;
+    /* Sky 700 */
+    --light-gray: #f8fafc;
+    /* Slate 50 */
+    --text-color: #334155;
+    /* Slate 700 */
+    --accent: #38bdf8;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    transition: color 0.2s ease;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+    color: var(--primary-color) !important;
+    background-color: rgba(2, 132, 199, 0.05);
+}
+
+.nav-link.text-danger:hover {
+    color: #dc3545 !important;
+    background-color: rgba(220, 53, 69, 0.05);
+}
+
+/* Modern Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15);
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* Cards with soft shadows */
+/* Uniform image size for cards and zoomable images */
+.card-img-top,
+.zoomable {
+    width: 100%;
+    max-height: 260px; /* uniform height for desktop */
+    object-fit: contain;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Slight zoom on hover for better UX */
+.card-img-top:hover,
+.zoomable:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 576px) {
+    .card-img-top,
+    .zoomable {
+        max-height: 180px; /* smaller height on mobile */
+    }
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Accordion modern styling */
+.accordion-item {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f0f9ff;
+    /* Sky 50 */
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+/* Images */
+.img-fluid {
+    border-radius: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    /* Slate 900 */
+    color: #94a3b8;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.icon-box {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    background: #f0f9ff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.warning-card {
+    border-left: 6px solid #ef4444;
+    /* Red 500 */
+}
+
+.warning-card .icon-box {
+    background: #fef2f2;
+    /* Red 50 */
+}
+
+/* Button Effects */
+.btn {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(2, 132, 199, 0.2);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(2, 132, 199, 0.15);
+}
+
+/* Ripple effect */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+    z-index: -1;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+.btn:active::after {
+    animation: ripple 0.1s ease-out;
+}
+
+/* Accordion Button Effects */
+.accordion-button {
+    transition: all 0.3s ease !important;
+}
+
+.accordion-button:hover {
+    background-color: rgba(2, 132, 199, 0.04) !important;
+    padding-left: 1.5rem !important;
+}
+
+/* QR Code Modal Image */
+#qrCodeContainer {
+    border: 1px solid #e2e8f0;
+}
+
+/* Image Zoom */
+.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoomable:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

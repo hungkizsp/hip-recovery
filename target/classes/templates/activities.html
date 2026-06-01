@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Sinh Hoạt An Toàn</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container py-5 fade-in">
+            <h1 class="text-primary text-center fw-bold mb-5">Hướng Dẫn Sinh Hoạt Hàng Ngày (ADLs)</h1>
+
+            <div class="accordion" id="activitiesAccordion">
+                <!-- Getting in/out bed -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBed">
+                            <i class="bi bi-moon-stars-fill me-2 text-primary"></i> Lên Xuống Giường
+                        </button>
+                    </h2>
+                    <div id="collapseBed" class="accordion-collapse collapse show" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <h5>Xuống giường (từ phía chân mổ):</h5>
+                                    <ol class="mb-4">
+                                        <li>Trượt người ra mép giường.</li>
+                                        <li>Thòng chân mổ xuống trước, giữ thẳng chân.</li>
+                                        <li>Dùng hai tay chống đẩy người ngồi dậy, đưa chân lành xuống theo.</li>
+                                        <li>Không gập hông quá 90 độ.</li>
+                                    </ol>
+                                    <h5>Lên giường:</h5>
+                                    <ol>
+                                        <li>Ngồi xuống mép giường (giữ chân mổ duỗi thẳng).</li>
+                                        <li>Đưa chân lành lên giường trước, sau đó từ từ đưa chân mổ lên, ngả lưng xuống giường cùng lúc.</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/safe-bed-transfer.jpeg}" class="img-fluid rounded w-75" alt="Lên xuống giường an toàn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sitting/Standing -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChair">
+                            <i class="bi bi-person-workspace me-2 text-primary"></i> Ngồi và Đứng Dậy
+                        </button>
+                    </h2>
+                    <div id="collapseChair" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <h5>Ngồi xuống ghế:</h5>
+                                    <ol class="mb-4">
+                                        <li>Lùi lại cho đến khi cảm thấy mép ghế chạm vào nhượng chân.</li>
+                                        <li>Trượt chân mổ ra phía trước.</li>
+                                        <li>Dùng hai tay nắm lấy tay vịn ghế, từ từ hạ người xuống.</li>
+                                    </ol>
+                                    <h5>Đứng dậy:</h5>
+                                    <ol>
+                                        <li>Trượt người ra nửa trước của mặt ghế.</li>
+                                        <li>Trượt chân mổ ra trước để tránh gập hông.</li>
+                                        <li>Chống hai tay lên tay vịn hoặc mặt ghế, dồn lực lên tay và chân lành để đẩy người đứng lên. Không bám vào khung tập đi để kéo người lên.</li>
+                                    </ol>
+                                    <p class="text-danger mt-2"><strong>Lưu ý:</strong> Nên chọn ghế có tựa lưng, có tay vịn và mặt ghế đủ cao để hông cao hơn đầu gối.</p>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/safe-chair-sitting.jpeg}" class="img-fluid rounded w-75" alt="Ngồi an toàn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Walking -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWalking">
+                            <i class="bi bi-person-walking me-2 text-primary"></i> Đi Lại Với Khung Tập Đi
+                        </button>
+                    </h2>
+                    <div id="collapseWalking" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <ol>
+                                        <li>Nhấc khung tập đi và đặt lên phía trước một khoảng vừa phải (không đẩy khung trượt đi).</li>
+                                        <li>Bước chân mổ lên ngang với hai chân sau của khung.</li>
+                                        <li>Dồn một phần trọng lượng lên hai tay bám khung (theo chỉ định của bác sĩ).</li>
+                                        <li>Bước chân lành lên ngang với chân mổ.</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/exercise-walker.png}" class="img-fluid rounded w-75" alt="Đi với khung tập đi">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toilet -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseToilet">
+                            <i class="bi bi-droplet-half me-2 text-primary"></i> Sử Dụng Nhà Vệ Sinh
+                        </button>
+                    </h2>
+                    <div id="collapseToilet" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <p>Tương tự như cách ngồi ghế, nhưng cần có ghế nâng bồn cầu (toilet seat elevator) nếu bồn cầu quá thấp, để đảm bảo khớp háng không gập quá 90 độ.</p>
+                                    <ul>
+                                        <li>Nên lắp đặt thanh vịn trong nhà tắm.</li>
+                                        <li>Dùng ghế tắm khi tắm vòi sen.</li>
+                                        <li>Không dùng bồn tắm nằm trong giai đoạn đầu.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/safe-toilet.png}" class="img-fluid rounded w-75" alt="Nhà vệ sinh an toàn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCar">
+                            <i class="bi bi-car-front-fill me-2 text-primary"></i> Lên Xuống Ô Tô
+                        </button>
+                    </h2>
+                    <div id="collapseCar" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <h5>Lên xe:</h5>
+                                    <ol>
+                                        <li>Đẩy ghế xe lùi ra sau tối đa, ngả tựa lưng ra sau. Đặt một túi nilon hoặc đệm trơn lên mặt ghế.</li>
+                                        <li>Lùi lại quay lưng vào xe, từ từ ngồi xuống ghế (chân mổ duỗi ra trước).</li>
+                                        <li>Từ từ xoay cả cơ thể và nhấc từng chân vào xe. Tránh vặn người hay bắt chéo chân.</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/safe-car.jpeg}" class="img-fluid rounded w-75" alt="Lên xe ô tô an toàn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stairs -->
+                <div class="accordion-item shadow-sm mb-3 border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStairs">
+                            <i class="bi bi-stairs me-2 text-primary"></i> Lên Xuống Cầu Thang
+                        </button>
+                    </h2>
+                    <div id="collapseStairs" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-12 mb-3">
+                                    <h5 class="text-success">Khẩu quyết: "LÊN LÀNH - XUỐNG ĐAU"</h5>
+                                    <p><strong>Lên cầu thang:</strong> Chân lành bước lên trước -> Đưa nạng/gậy và chân mổ lên theo.</p>
+                                    <p><strong>Xuống cầu thang:</strong> Đặt nạng/gậy và chân mổ xuống trước -> Chân lành bước xuống theo.</p>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img th:src="@{/images/stairs-training.jpeg}" class="img-fluid rounded w-75" alt="Tập lên xuống cầu thang">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

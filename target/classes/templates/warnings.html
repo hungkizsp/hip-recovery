@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Dấu Hiệu Cảnh Báo</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container py-5 fade-in">
+            <h1 class="text-danger text-center fw-bold mb-3">Dấu Hiệu Cảnh Báo Cấp Cứu</h1>
+            <p class="text-center text-muted mb-5">Liên hệ ngay với bác sĩ hoặc đến phòng cấp cứu nếu bạn gặp các triệu chứng sau</p>
+
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img th:src="@{/images/warning-signs.svg}" class="img-fluid rounded shadow" alt="Dấu hiệu cảnh báo">
+                </div>
+                <div class="col-md-7">
+                    <!-- Dấu hiệu trật khớp -->
+                    <div class="alert alert-danger mb-4 shadow-sm">
+                        <h4 class="alert-heading fw-bold"><i class="bi bi-exclamation-octagon-fill me-2"></i>Nghi Ngờ Trật Khớp</h4>
+                        <hr>
+                        <ul class="mb-0 fs-5">
+                            <li>Đau dữ dội, đột ngột ở hông, bẹn hoặc đùi.</li>
+                            <li>Không thể cử động chân hoặc không thể đi lại được nữa.</li>
+                            <li>Hình dáng khớp háng biến dạng, chân ngắn lại so với chân kia.</li>
+                            <li>Chân xoay hẳn ra ngoài hoặc xoay hẳn vào trong.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dấu hiệu nhiễm trùng -->
+                    <div class="alert alert-danger mb-4 shadow-sm">
+                        <h4 class="alert-heading fw-bold"><i class="bi bi-thermometer-high me-2"></i>Dấu Hiệu Nhiễm Trùng</h4>
+                        <hr>
+                        <ul class="mb-0 fs-5">
+                            <li>Sốt trên 38°C hoặc ớn lạnh.</li>
+                            <li>Vết mổ sưng, đỏ tấy, hoặc đau tăng lên.</li>
+                            <li>Vết mổ chảy dịch đục, có mùi hôi hoặc chảy máu liên tục.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dấu hiệu huyết khối -->
+                    <div class="alert alert-danger shadow-sm">
+                        <h4 class="alert-heading fw-bold"><i class="bi bi-lungs me-2"></i>Dấu Hiệu Huyết Khối / Thuyên Tắc Phổi</h4>
+                        <hr>
+                        <ul class="mb-0 fs-5">
+                            <li>Sưng to bất thường ở bắp chân hoặc đùi chân mổ (không giảm sau khi kê cao chân).</li>
+                            <li>Đau bắp chân khi bóp nhẹ hoặc khi gập cổ chân lên.</li>
+                            <li>Đột ngột khó thở, thở dốc.</li>
+                            <li>Đau tức ngực đột ngột (đặc biệt khi hít vào).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Tổng Quan</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container py-5 fade-in">
+            <h1 class="text-primary text-center fw-bold mb-5">Tổng Quan Về Phục Hồi Chức Năng</h1>
+            
+            <div class="row align-items-center mb-5 bg-white rounded p-4 shadow-sm">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img th:src="@{/images/hip-replacement-1.jpeg}" alt="Thay khớp háng" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-primary fw-bold"><i class="bi bi-info-circle-fill me-2"></i>Giới thiệu</h3>
+                    <p>Phẫu thuật thay khớp háng là một thủ thuật y khoa nhằm thay thế khớp háng bị hỏng bằng khớp nhân tạo. Tuy nhiên, phẫu thuật chỉ là bước đầu tiên.</p>
+                    <p>Sự thành công của ca phẫu thuật phụ thuộc rất lớn vào quá trình phục hồi chức năng sau đó. Chăm sóc đúng cách sẽ giúp bạn giảm đau, phục hồi khả năng vận động và trở lại cuộc sống bình thường một cách an toàn.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="bi bi-star-fill text-warning me-2"></i>Tầm quan trọng của phục hồi</h4>
+                            <ul class="list-group list-group-flush mt-3">
+                                <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i>Ngăn ngừa cục máu đông và biến chứng</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i>Tăng cường sức mạnh cơ bắp quanh khớp háng</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i>Cải thiện tuần hoàn máu</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i>Phục hồi biên độ vận động của khớp</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle text-success me-2"></i>Giúp tự lập trong sinh hoạt hàng ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="bi bi-shield-lock-fill text-primary me-2"></i>Nguyên tắc phục hồi</h4>
+                            <ul class="list-group list-group-flush mt-3">
+                                <li class="list-group-item"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Bắt đầu vận động sớm theo chỉ định</li>
+                                <li class="list-group-item"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Tuân thủ tuyệt đối tư thế an toàn</li>
+                                <li class="list-group-item"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Tập luyện đều đặn, không gắng sức quá mức</li>
+                                <li class="list-group-item"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Sử dụng dụng cụ hỗ trợ (khung tập đi, nạng) cho đến khi bác sĩ cho phép bỏ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

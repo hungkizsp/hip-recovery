@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Phòng Ngừa Trật Khớp</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="container py-5 fade-in">
+            <h1 class="text-primary text-center fw-bold mb-5">Phòng Ngừa Trật Khớp Háng</h1>
+            
+            <div class="alert alert-warning mb-5" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong>Rất quan trọng:</strong> Trong 6-12 tuần đầu sau phẫu thuật, nguy cơ trật khớp háng là cao nhất. Cần tuân thủ nghiêm ngặt các quy tắc an toàn.
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 warning-card shadow-sm border-0 bg-white">
+                        <div class="card-body text-center">
+                            <img th:src="@{/images/prevent-hip-flexion.webp}" class="card-img-top zoomable mb-2 rounded" alt="Không Gập Hông Quá 90 Độ">
+                            <h4 class="card-title text-danger mt-3">Không Gập Hông Quá 90 Độ</h4>
+                            <p class="card-text text-muted mt-3">Không cúi nhặt đồ vật trên sàn, không ngồi ghế quá thấp, không cúi người khi mang giày tất.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 warning-card shadow-sm border-0 bg-white">
+                        <div class="card-body text-center">
+                            <img th:src="@{/images/prevent-crossing.jpg}" class="card-img-top zoomable mb-2 rounded" alt="Không Bắt Chéo Chân">
+                            <h4 class="card-title text-danger mt-3">Không Bắt Chéo Chân</h4>
+                            <p class="card-text text-muted mt-3">Luôn giữ hai chân dang rộng. Đặt một gối giữa hai chân khi nằm ngủ để tránh bắt chéo chân trong vô thức.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 warning-card shadow-sm border-0 bg-white">
+                        <div class="card-body text-center">
+                            <img th:src="@{/images/prevent-rotation.jpg}" class="card-img-top zoomable mb-2 rounded" alt="Không Xoay Trong Chân Mổ">
+                            <h4 class="card-title text-danger mt-3">Không Xoay Trong Chân Mổ</h4>
+                            <p class="card-text text-muted mt-3">Giữ bàn chân hướng ra ngoài hoặc thẳng. Khi quay người, hãy di chuyển cả cơ thể thay vì vặn người.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-primary fw-bold mb-4">Tư Thế An Toàn Nằm Nệm</h3>
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3"><i class="bi bi-check2-circle text-success me-2 fs-5"></i> <strong>Nằm ngửa:</strong> Giữ hai chân dang nhẹ, mũi chân hướng lên trần nhà. Có thể dùng gối chêm giữa hai chân.</li>
+                        <li class="list-group-item py-3"><i class="bi bi-check2-circle text-success me-2 fs-5"></i> <strong>Nằm nghiêng:</strong> Nếu bác sĩ cho phép, nằm nghiêng về bên chân LÀNH. BẮT BUỘC kẹp gối dày giữa hai chân để giữ chân mổ không bị rủ xuống.</li>
+                        <li class="list-group-item py-3"><i class="bi bi-x-circle text-danger me-2 fs-5"></i> <strong>Nằm sấp:</strong> KHÔNG ĐƯỢC nằm sấp.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
